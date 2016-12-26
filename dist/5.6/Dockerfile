@@ -1,5 +1,5 @@
 FROM php:5.6-fpm
-MAINTAINER Mark Shust <mark.shust@mageinferno.com>
+MAINTAINER Minh Nguyen <minhrau92@gmail.com>
 
 RUN apt-get update \
   && apt-get install -y \
@@ -15,6 +15,7 @@ RUN docker-php-ext-configure \
   gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
 
 RUN docker-php-ext-install \
+  bcmath \
   gd \
   intl \
   mbstring \

@@ -1,5 +1,5 @@
 FROM php:$VERSION-fpm
-MAINTAINER Mark Shust <mark.shust@mageinferno.com>
+MAINTAINER Minh Nguyen <minhrau92@gmail.com>
 
 RUN apt-get update \
   && apt-get install -y \
